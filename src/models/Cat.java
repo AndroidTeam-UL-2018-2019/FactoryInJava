@@ -1,5 +1,5 @@
 package models;
-import interfaces.IAnimal;
+import main.java.interfaces.IAnimal;
 
 public class Cat implements IAnimal {
     @Override

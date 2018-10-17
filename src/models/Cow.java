@@ -1,6 +1,6 @@
 package models;
 
-import interfaces.IAnimal;
+import main.java.interfaces.IAnimal;
 
 public class Cow implements IAnimal {
     @Override

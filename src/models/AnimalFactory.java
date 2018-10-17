@@ -1,20 +1,21 @@
 package models;
-import interfaces.IAnimal;
+import main.java.interfaces.IAnimal;
+
 
 public class AnimalFactory {
 
-    public static IAnimal CreateAnimalObject(models.Animals animalType){
+    public static IAnimal CreateAnimalObject(Animals animalType){
         IAnimal animal;
         switch (animalType)
         {
             case Cat:
-                animal = new models.Cat();
+                animal = new Cat();
                 break;
             case Cow:
-                animal = new models.Cow();
+                animal =  new Cow();
                 break;
             case Dog:
-                animal = new models.Dog();
+                animal =  new Dog();
                 break;
             default:
                 throw new IllegalArgumentException("Undefinded animal type.");
