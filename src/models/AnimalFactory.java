@@ -3,18 +3,18 @@ import interfaces.IAnimal;
 
 public class AnimalFactory {
 
-    public static IAnimal CreateAnimalObject(Animals animalType){
+    public static IAnimal CreateAnimalObject(models.Animals animalType){
         IAnimal animal;
         switch (animalType)
         {
             case Cat:
-                animal = new Cat();
+                animal = new models.Cat();
                 break;
             case Cow:
-                animal = new Cow();
+                animal = new models.Cow();
                 break;
             case Dog:
-                animal = new Dog();
+                animal = new models.Dog();
                 break;
             default:
                 throw new IllegalArgumentException("Undefinded animal type.");

@@ -9,19 +9,19 @@ class AnimalFactoryTest {
 
     @Test
     void createAnimalObjectCow() {
-        IAnimal animal = AnimalFactory.CreateAnimalObject(Animals.Cow);
+        IAnimal animal = AnimalFactory.CreateAnimalObject(models.Animals.Cow);
         assertTrue(animal instanceof IAnimal);
     }
 
     @Test
     void createAnimalObjectDog() {
-        IAnimal animal = AnimalFactory.CreateAnimalObject(Animals.Dog);
+        IAnimal animal = AnimalFactory.CreateAnimalObject(models.Animals.Dog);
         assertTrue(animal instanceof IAnimal);
     }
 
     @Test
     void createAnimalObjectCat() {
-        IAnimal animal = AnimalFactory.CreateAnimalObject(Animals.Cat);
+        IAnimal animal = AnimalFactory.CreateAnimalObject(models.Animals.Cat);
         assertTrue(animal instanceof IAnimal);
     }
 }
